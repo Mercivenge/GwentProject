@@ -46,7 +46,6 @@ class API
             foreach($card_info->variations as $kee=>$vari)
             {
                 $card_variation = $this->result_site($vari->href."?lang=".$lang);
-                print("<pre>");
                 /*print_r($card_info->variations[$kee]);
                 print("</pre><br>");
                 */
@@ -79,7 +78,6 @@ class API
             foreach($card_info->variations as $kee=>$vari)
             {
                 $card_variation = $this->result_site($vari->href."?lang=".$lang);
-                print("<pre>");
                 /*print_r($card_info->variations[$kee]);
                 print("</pre><br>");
                 */
