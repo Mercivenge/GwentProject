@@ -4,7 +4,7 @@ class FileManager
     function readFile($path, $lang='en-US')
     {
         $path = $path.$lang;
-        if(is_dir("data"))
+        if(!is_dir("data"))
             mkdir("data");
         if(file_exists($path))
         {
